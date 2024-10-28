@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7e9e3;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for perfect centering */
+    margin: 0;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 500px; /* Container won't exceed 500px */
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 20px; /* Margin for spacing on small screens */
+}
+
+h1 {
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+button {
+    width: 70%; /* Set input and button width to 70% */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff5252;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ff6b6b;
+}
+
+/* Media query for screens 768px and smaller */
+@media (max-width: 768px) {
+    .content-container {
+        width: 90%; /* Container width becomes 90% of the viewport */
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+
+    input[type="text"],
+    button {
+        width: 80%; /* Slightly wider for smaller screens */
+    }
+}
+
+/* Media query for screens 480px and smaller */
+@media (max-width: 480px) {
+    .content-container {
+        width: 95%; /* Further reduce container width for very small screens */
+        padding: 20px; /* Smaller padding for narrow devices */
+    }
+
+    h1 {
+        font-size: 24px; /* Slightly smaller heading on very small screens */
+    }
+
+    input[type="text"],
+    button {
+        width: 90%; /* Inputs take more space on very small screens */
+    }
+
+    #result {
+        font-size: 20px; /* Reduce result text size */
+    }
+}
